@@ -1,9 +1,13 @@
 import "./App.css";
 
+import Layout from "./hoc/Layout/Layout";
+
 function App() {
   return (
     <div className="App">
-      <h1> Testing</h1>
+      <Layout>
+        <h1> TESTING: It is worinkg</h1>
+      </Layout>
     </div>
   );
 }
