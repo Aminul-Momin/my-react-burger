@@ -6,6 +6,7 @@ import classes from "./Layout.module.css";
 const layout = (props) => {
   return (
     <Aux>
+      <h1>{props.children}</h1>
       <h3 style={{ color: "red" }}>Slot for Sidebar</h3>
       <h3 style={{ color: "red" }}>Slot for BackDrop</h3>
 
