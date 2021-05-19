@@ -6,9 +6,9 @@ import classes from "./Layout.module.css";
 const layout = (props) => {
   return (
     <Aux>
-      <h1>{props.children}</h1>
-      <h3 style={{ color: "red" }}>Slot for Sidebar</h3>
-      <h3 style={{ color: "red" }}>Slot for BackDrop</h3>
+      {props.children}
+      <p style={{ color: "red" }}>Slot for Navigation Bar</p>
+      <p style={{ color: "red" }}>Slot for Sidebar</p>
 
       <main className={classes.container}>
         <BurgerBuilder />
