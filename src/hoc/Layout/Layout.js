@@ -6,10 +6,10 @@ import classes from "./Layout.module.css";
 const layout = (props) => {
   return (
     <Aux>
-      {props.children}
-      <p style={{ color: "red" }}>Slot for Navigation Bar</p>
-      <p style={{ color: "red" }}>Slot for Sidebar</p>
-
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <p style={{ color: "red" }}>NavBar Slot</p>
+        <p style={{ color: "red" }}>Sidebar Slot</p>
+      </div>
       <main className={classes.container}>
         <BurgerBuilder />
       </main>
