@@ -63,6 +63,10 @@ class BurgerBuilder extends Component {
     this.setState({ purchasing: false });
   };
 
+  continuePurchaseHandler = () => {
+    alert("Continued");
+  };
+
   render() {
     let disalbleInfo = { ...this.state.ingredients };
     for (let key in disalbleInfo) {
@@ -70,7 +74,12 @@ class BurgerBuilder extends Component {
     }
 
     const orderSummary = this.state.purchasing ? (
-      <OrderSummary ingredients={this.state.ingredients} />
+      <OrderSummary
+        ingredients={this.state.ingredients}
+        price={this.state.totalPrice}
+        canceledPurchase={this.cancelPurchaseHandler}
+        continuedPurchase={this.continuePurchaseHandler}
+      />
     ) : null;
 
     return (

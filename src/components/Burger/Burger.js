@@ -19,7 +19,6 @@ const burger = (props) => {
   }
   return (
     <div className={classes.Burger}>
-      <p> Burger Component</p>
       <BurgerIngredient type="bread-top" />
       {/* {[
         <BurgerIngredient type="meat" />,
